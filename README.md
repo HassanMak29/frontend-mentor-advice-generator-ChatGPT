@@ -32,7 +32,7 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 - Desktop-first workflow
 - [Vite](https://vitejs.dev/) - JS tool
 - [PostCSS](https://postcss.org/) - For styles
-  -ChatGPT API
+- [ChatGPT-API](https://platform.openai.com/docs/api-reference) - for the content
 
 ## Author
 
