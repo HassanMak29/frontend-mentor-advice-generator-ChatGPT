@@ -26,7 +26,7 @@ const getQuote = async () => {
 };
 
 diceBtn.addEventListener("click", async () => {
-  const expiryDate = new Date(2023, 3, 2);
+  const expiryDate = new Date(2023, 3, 4);
   if (new Date() < expiryDate) {
     const slip = await getQuote();
     adviceID.textContent = slip.split("-")[0];
