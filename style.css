@@ -32,6 +32,7 @@ body {
   min-height: 100vh;
   background-color: var(--darkBlue);
   display: flex;
+  flex-direction: column;
   place-content: center;
   place-items: center;
 }
@@ -41,6 +42,15 @@ main {
   width: 100%;
   display: grid;
   place-content: center;
+  place-items: center;
+}
+
+main > span {
+  text-align: center;
+  color: #d2183a;
+  max-width: 50rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 h1 {

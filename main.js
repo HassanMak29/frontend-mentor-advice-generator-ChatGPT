@@ -26,7 +26,14 @@ const getQuote = async () => {
 };
 
 diceBtn.addEventListener("click", async () => {
-  const slip = await getQuote();
-  adviceID.textContent = slip.split("-")[0];
-  advice.textContent = slip.split("-")[1].trim();
+  const expiryDate = new Date(2023, 3, 2);
+  if (new Date() < expiryDate) {
+    const slip = await getQuote();
+    adviceID.textContent = slip.split("-")[0];
+    advice.textContent = slip.split("-")[1].trim();
+  } else {
+    advice.style.color = "#b3d218";
+    advice.textContent =
+      "The API trial has expired! Thank you for visiting this page.";
+  }
 });
